@@ -84,7 +84,7 @@ CREATE TABLE `pagamentos` (
 CREATE TABLE `passageiros` (
   `id` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `cpf` varchar(9) NOT NULL
+  `cpf` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------

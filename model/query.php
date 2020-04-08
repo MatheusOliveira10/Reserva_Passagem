@@ -4,7 +4,7 @@ class Query
 {
     public function rodarQuery($qry)
     {
-        $dsn = "mysql:host=localhost;dbname=bdteste";
+        $dsn = "mysql:host=localhost;dbname=reservas";
         $user = "root";
         $pass = "123123";
 
@@ -16,9 +16,9 @@ class Query
 
             $stm->execute();
 
-           return 200;
+            echo 200;
         } catch (PDOException $e) {
-            return "Erro:" . $e->getMessage();
+            echo "Erro:" . $e->getMessage();
         }
     }
 }
