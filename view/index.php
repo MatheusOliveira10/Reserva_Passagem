@@ -33,7 +33,7 @@
         Cancelar
       </a>
       <a href="/passageiro" class="item">
-        Cliente
+        Passageiro
       </a>
       <div class="right menu">
         <div class="item">
