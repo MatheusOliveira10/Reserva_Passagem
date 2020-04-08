@@ -14,7 +14,7 @@
   <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
   </script>
 
-  <title>Form SI 5A</title>
+  <title>Home</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
       <a href="/cancela" class="item">
         Cancelar
       </a>
-      <a href="/cliente" class="item">
+      <a href="/passageiro" class="item">
         Cliente
       </a>
       <div class="right menu">
@@ -45,86 +45,12 @@
       </div>
     </div>
     <div class="ui segment">
-      <form class="ui form">
-        <h4 class="ui dividing header">Cadastro de Imóveis</h4>
-        <div class="field">
-          <div class="two fields">
-            <div class="field">
-              <label>Inquilino</label>
-              <select class="ui fluid dropdown">
-                <option value="">Selecione um estado...</option>
-                <option value="1">Bruno Guimarães</option>
-                <option value="2">Matheus Oliveira</option>
-                <option value="3">Maurício Acconcia</option>
-              </select>
-            </div>
-            <div class="field">
-              <label>Proprietário</label>
-              <select class="ui fluid dropdown">
-                <option value="">Selecione um estado...</option>
-                <option value="1">Bruno Guimarães</option>
-                <option value="1">Matheus Oliveira</option>
-                <option value="1">Maurício Acconcia</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <label>Endereço</label>
-          <div class="fields">
-            <div class="twelve wide field">
-              <input type="text" name="shipping[address]" placeholder="Rua, Avenida...">
-            </div>
-            <div class="four wide field">
-              <input type="text" name="shipping[address-2]" placeholder="Número">
-            </div>
-          </div>
-        </div>
-        <div class="six fields">
-          <div class="four wide field">
-            <label>Bairro</label>
-            <input type="text" name="shipping[address-2]" placeholder="Bairro">
-          </div>
-          <div class="four wide field">
-            <label>Cidade</label>
-            <input type="text" name="shipping[address-2]" placeholder="Cidade">
-          </div>
-          <div class="four wide field">
-            <label>Estado</label>
-            <select class="ui fluid dropdown">
-              <option value="">Selecione um estado...</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-          </div>
-        </div>
-        <div class="ui blue button" tabindex="0">Enviar</div>
-      </form>
+      <div class="ui text container">
+        <h1 class="ui header">
+          Sistema de Reserva de Passagens
+        </h1>
+        <h2>Seja feliz e reserve passagens nesse tesudo sistema.</h2>
+      </div>
     </div>
   </div>
 

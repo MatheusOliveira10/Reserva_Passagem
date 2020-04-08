@@ -7,4 +7,7 @@ class homeController{
   public function login(){
     include "view/login.php";
   }
+  public function cadastro(){
+    include "view/passageiros/cadastro.php";
+  }
 }
