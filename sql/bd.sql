@@ -32,8 +32,7 @@ CREATE TABLE `assentos` (
   `id` int(11) NOT NULL,
   `id_aviao` int(11) NOT NULL,
   `id_passagem` int(11),
-  `posicao` int(11) NOT NULL,
-  `fileira` char(1) NOT NULL,
+  `posicao` varchar(2) NOT NULL,
   `ocupado` char(1) NOT NULL,
   `pcd` char(1) NOT NULL,
   `overbooking` char(1) NOT NULL
