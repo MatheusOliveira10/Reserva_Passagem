@@ -27,7 +27,7 @@
             <a href="/reserva" class="item">
                 Reserva
             </a>
-            <a href="/pagar" class="item">
+            <a href="/pagamento" class="item">
                 Pagar
             </a>
             <a href="/cancela" class="item">

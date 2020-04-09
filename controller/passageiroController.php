@@ -17,7 +17,7 @@ class passageiroController
         $qry .= ")";
 
         $pdo = new Query();
-        $pdo->rodarQuery($qry);
+        $pdo->insert($qry);
 
         header("Location: /passageiro");
     }

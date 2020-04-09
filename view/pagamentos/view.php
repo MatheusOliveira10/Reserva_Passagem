@@ -13,15 +13,14 @@
     <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
     </script>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <title>Home</title>
+    <title>Form SI 5A</title>
 </head>
 
 <body>
     <div class="ui container">
         <div class="ui pointing menu">
-            <a href="/" class="item">
+            <a href="/" class="active item">
                 Home
             </a>
             <a href="/reserva" class="item">
@@ -33,8 +32,8 @@
             <a href="/cancela" class="item">
                 Cancelar
             </a>
-            <a href="/passageiro" class="active item">
-                Passageiro
+            <a href="/cancela" class="item">
+                Cliente
             </a>
             <div class="right menu">
                 <div class="item">
@@ -46,27 +45,28 @@
             </div>
         </div>
         <div class="ui segment">
-            <form class="ui form" method="post" action="/pagamento/save">
-                <h4 class="ui dividing header">Realizar Pagamento <a style="float: right" href="/pagamento/view"><i class="eye icon"></i></a>
-                </h4>
-                <div class="field">
-                    <label>Passagem</label>
-                    <select name="passageiro">
-                        <?php foreach ($passagens as $passagem) { ?>
-                            <option value="<?php echo $passagem['id'] ?>"><?php echo $passagem['nome'] ?> - R$ <?php echo $passagem['preco'] ?></option>
-                        <?php } ?>
-                    </select>
-                </div>
-
-                <input type="submit" class="ui blue button" tabindex="0">
-            </form>
+            <h2>Pagamentos</h2>
+            <table class="ui red table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($pagamentos as $pagamento) { ?>
+                        <tr>
+                            <td><?php echo $pagamento['id'] ?></td>
+                            <td><?php echo $pagamento['nome'] ?></td>
+                            <td>R$ <?php echo $pagamento['preco'] ?></td>
+                            <td><?php echo $pagamento['data'] ?></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
         </div>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#cpf").mask("999.999.999-99");
-            });
-        </script>
 </body>
 
 </html>

@@ -30,8 +30,11 @@ switch ($page) {
   case "pagamento":
     $pagar->cadastro();
     break;
-  case "pagamento/pagar":
-    $pagar->pagar($POST);
+  case "pagamento/save":
+    $pagar->pagar($_POST);
+    break;
+  case "pagamento/view":
+    $pagar->view();
     break;
   default:
     $ctrl->index();
