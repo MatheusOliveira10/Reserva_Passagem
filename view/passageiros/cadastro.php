@@ -53,18 +53,25 @@
                     <label>Nome</label>
                     <input type="text" name="nome" placeholder="Nome Completo">
                 </div>
-                <div class="four wide field">
-                    <label>CPF</label>
-                    <input id="cpf" type="text" name="CPF" placeholder="CPF">
+                <div class="inline fields">
+                    <div class="four wide field">
+                        <label for="CPF">CPF</label>
+                        <input id="cpf" type="text" name="CPF" placeholder="CPF">
+                    </div>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="PCD">
+                        <label>É PCD?</label>
+                    </div>
                 </div>
                 <input type="submit" class="ui blue button" tabindex="0">
         </div>
+    </div>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#cpf").mask("999.999.999-99");
-            });
-        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#cpf").mask("999.999.999-99");
+        });
+    </script>
 </body>
 
 </html>

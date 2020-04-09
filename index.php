@@ -41,6 +41,9 @@ switch ($page) {
   case "reserva":
     $reserva->cadastro();
     break;
+  case "reserva/save":
+    $reserva->save($_POST);
+    break;
   default:
     $ctrl->index();
     break;
