@@ -2,7 +2,14 @@
 //require "model/query.php";
 
 class reservaController {
+
     public function cadastro() {
+        $qry = "SELECT id_passagem FROM assentos ORDER BY posicao, fileira";
+       
+        $pdo = new Query();
+
+        $assentos = $pdo->select($qry);
+
         include "view/reservas/cadastro.php";
     }
 

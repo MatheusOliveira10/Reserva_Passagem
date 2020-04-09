@@ -61,7 +61,7 @@
                         <li class="row row--1">
                             <ol class="seats" type="A">
                                 <li class="seat_p">
-                                    <input type="checkbox" id="1A" />
+                                    <input type="checkbox" id="1A" <?php if ($assentos[0]['id_passagem'] != null) { echo 'disabled'; } ?>/>
                                     <label for="1A">1A</label>
                                 </li>
                                 <li class="seat_p">
