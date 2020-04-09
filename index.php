@@ -2,11 +2,13 @@
 require "controller/homeController.php";
 require "controller/passageiroController.php";
 require "controller/pagamentoController.php";
+require "controller/reservaController.php";
 
 $pagina = explode('/', $_SERVER['REQUEST_URI']);
 $ctrl = new homeController();
 $pass = new passageiroController();
 $pagar = new pagamentoController();
+$reserva = new reservaController();
 
 if (isset($pagina[2])) {
   $page = $pagina[1] . "/" . $pagina[2];
@@ -35,6 +37,9 @@ switch ($page) {
     break;
   case "pagamento/view":
     $pagar->view();
+    break;
+  case "reserva":
+    $reserva->cadastro();
     break;
   default:
     $ctrl->index();
