@@ -2,7 +2,7 @@
 
 class Query
 {
-    public function rodarQuery($qry)
+    public function insert($qry)
     {
         $dsn = "mysql:host=localhost;dbname=reservas";
         $user = "root";
@@ -17,6 +17,24 @@ class Query
             $stm->execute();
 
             echo 200;
+        } catch (PDOException $e) {
+            echo "Erro:" . $e->getMessage();
+        }
+    }
+
+    public function select($qry)
+    {
+        $dsn = "mysql:host=localhost;dbname=reservas";
+        $user = "root";
+        $pass = "123123";
+
+        try {
+            $pdo = new PDO($dsn, $user, $pass);
+
+            $result = $pdo->query($qry);
+            $rows = $result->fetchAll();
+
+            return $rows;
         } catch (PDOException $e) {
             echo "Erro:" . $e->getMessage();
         }

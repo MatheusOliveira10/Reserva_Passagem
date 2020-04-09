@@ -21,4 +21,8 @@ class passageiroController
 
         header("Location: /passageiro");
     }
+
+    public function cadastro(){
+        include "view/passageiros/cadastro.php";
+    }
 }
