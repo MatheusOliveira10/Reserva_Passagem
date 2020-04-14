@@ -49,6 +49,9 @@ switch ($page) {
   case "reserva/save":
     $reserva->save($_POST);
     break;
+  case "reserva/view":
+    $reserva->view();
+    break;
   case "cancelamentos/save":
     $cancelamento->save($_POST);
     break;

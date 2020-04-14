@@ -46,23 +46,25 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2>Passageiros <a href="/passageiro/cadastrar"><i class="plus red icon" style="float: right"></i></a></h2>
+            <h2>Reservas <a href="/reserva"><i class="plus red icon" style="float: right"></i></a></h2>
             <table class="ui red table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>CPF</th>
+                        <th>Passageiro</th>
+                        <th>Posição</th>
+                        <th>Preço</th>
                         <th>PCD</th>
+                        <th>Overbooking</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($passageiros as $passageiro) { ?>
+                    <?php foreach ($reservas as $reserva) { ?>
                         <tr>
-                            <td><?php echo $passageiro['id'] ?></td>
-                            <td><?php echo $passageiro['nome'] ?></td>
-                            <td><?php echo $passageiro['cpf'] ?></td>
-                            <td><?php echo $passageiro['PCD'] ?></td>
+                            <td><?php echo $reserva['nome'] ?></td>
+                            <td><?php echo $reserva['posicao'] ?></td>
+                            <td>R$ <?php echo $reserva['preco'] ?></td>
+                            <td><?php echo $reserva['PCD'] ?></td>
+                            <td><?php echo $reserva['overbooking'] ?></td>
                         </tr>
                     <?php } ?>  
                 </tbody>
