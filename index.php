@@ -3,12 +3,14 @@ require "controller/homeController.php";
 require "controller/passageiroController.php";
 require "controller/pagamentoController.php";
 require "controller/reservaController.php";
+require "controller/cancelamentoController.php";
 
 $pagina = explode('/', $_SERVER['REQUEST_URI']);
 $ctrl = new homeController();
 $pass = new passageiroController();
 $pagar = new pagamentoController();
 $reserva = new reservaController();
+$cancelamento = new cancelamentoController();
 
 if (isset($pagina[2])) {
   $page = $pagina[1] . "/" . $pagina[2];
@@ -47,6 +49,14 @@ switch ($page) {
   case "reserva/save":
     $reserva->save($_POST);
     break;
+  case "cancelamentos/save":
+    $cancelamento->save($_POST);
+    break;
+  case "cancelamentos/cadastro":
+    $cancelamento->cadastro();
+    break;
+  case "cancelamentos/":
+    $cancelamento->view();
   default:
     $ctrl->index();
     break;

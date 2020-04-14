@@ -13,27 +13,28 @@
     <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
     </script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <title>Form SI 5A</title>
+    <title>Home</title>
 </head>
 
 <body>
     <div class="ui container">
         <div class="ui pointing menu">
-            <a href="/" class="active item">
+            <a href="/" class="item">
                 Home
             </a>
             <a href="/reserva" class="item">
                 Reserva
             </a>
-            <a href="/pagamento" class="item">
+            <a href="/pagamento" class="active item">
                 Pagar
             </a>
             <a href="/cancela" class="item">
                 Cancelar
             </a>
             <a href="/passageiro" class="item">
-                Passageiros
+                Passageiro
             </a>
             <div class="right menu">
                 <div class="item">
@@ -45,27 +46,17 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2>Pagamentos</h2>
-            <table class="ui red table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Cliente</th>
-                        <th>Valor</th>
-                        <th>Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($pagamentos as $pagamento) { ?>
-                        <tr>
-                            <td><?php echo $pagamento['id'] ?></td>
-                            <td><?php echo $pagamento['nome'] ?></td>
-                            <td>R$<?php echo $pagamento['preco'] ?></td>
-                            <td><?php echo $pagamento['data'] ?></td>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
+            <form class="ui form" method="post" action="/cancelamentos/save">
+                <div class="field">
+                    <label>Cancelamento</label>
+                    <select name="passagem">
+                        <?php foreach ($passagens as $passagem) { ?>
+                            <option value="<?php echo $passagem['id'] ?>">Id da passagem: <?php echo $passagem['id'] ?> - Id Avião: <?php echo $passagem['id_aviao'] ?> - Posicao do Assento: <?php echo $passagem['posicao'] ?> - <?php echo $passagem['data'] ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <input type="submit" class="ui blue button" tabindex="0">
+            </form>
         </div>
 </body>
 

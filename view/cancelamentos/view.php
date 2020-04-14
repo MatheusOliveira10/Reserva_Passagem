@@ -13,12 +13,13 @@
     <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
     </script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <title>Form SI 5A</title>
+    <title>Passageiros Cadastrados</title>
 </head>
 
 <body>
-    <div class="ui container">
+<div class="ui container">
         <div class="ui pointing menu">
             <a href="/" class="active item">
                 Home
@@ -29,11 +30,11 @@
             <a href="/pagamento" class="item">
                 Pagar
             </a>
-            <a href="/cancela" class="item">
+            <a href="/cancelamentos" class="item">
                 Cancelar
             </a>
-            <a href="/passageiro" class="item">
-                Passageiros
+            <a href="/passageiros" class="item">
+                Cliente
             </a>
             <div class="right menu">
                 <div class="item">
@@ -45,23 +46,28 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2>Pagamentos</h2>
+            <h2>Passageiros</h2>
+            <a href="/cancelamentos/cadastro">
+            <button class="ui secondary button">
+                Cadastrar novo cancelamento
+            </button>
+            </a>
             <table class="ui red table">
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Cliente</th>
-                        <th>Valor</th>
+                        <th>ID Passagem</th>
                         <th>Data</th>
+                        <th>Parcial</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($pagamentos as $pagamento) { ?>
+                    <?php foreach ($cancelamentos as $cancelamento) { ?>
                         <tr>
-                            <td><?php echo $pagamento['id'] ?></td>
-                            <td><?php echo $pagamento['nome'] ?></td>
-                            <td>R$<?php echo $pagamento['preco'] ?></td>
-                            <td><?php echo $pagamento['data'] ?></td>
+                            <td><?php echo $cancelamento['id'] ?></td>
+                            <td><?php echo $cancelamento['id_passageiro'] ?></td>
+                            <td><?php echo $cancelamento['data'] ?></td>
+                            <td><?php echo $cancelamento['parcial'] ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>

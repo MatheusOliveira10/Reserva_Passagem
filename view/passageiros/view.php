@@ -47,6 +47,11 @@
         </div>
         <div class="ui segment">
             <h2>Passageiros</h2>
+            <a href="/passageiro/cadastrar">
+            <button class="ui secondary button">
+                Cadastrar novo Passageiro
+            </button>
+            </a>
             <table class="ui red table">
                 <thead>
                     <tr>
@@ -61,7 +66,7 @@
                         <tr>
                             <td><?php echo $passageiro['id'] ?></td>
                             <td><?php echo $passageiro['nome'] ?></td>
-                            <td>R$ <?php echo $passageiro['cpf'] ?></td>
+                            <td><?php echo $passageiro['cpf'] ?></td>
                             <td><?php echo $passageiro['PCD'] ?></td>
                         </tr>
                     <?php } ?>
