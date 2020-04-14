@@ -4,9 +4,16 @@ class Query
 {
     public function insert($qry)
     {
+        /*SÓ FUNCIONA NO PC DO BRUNO GUIMARAES, NAO DESCOMENTE NEM DELETE*/
+        $dsn = "mysql:host=localhost:3308;dbname=reservas";
+        $user = "root";
+        $pass = "";
+
+        /* COMENTE O CÓDIGO ACIMA SE VOCÊ NÃO FOR O BRUNO E USE O ABAIXO
         $dsn = "mysql:host=localhost;dbname=reservas";
         $user = "root";
         $pass = "123123";
+        */
 
         try {
             $pdo = new PDO($dsn, $user, $pass);
@@ -24,9 +31,16 @@ class Query
 
     public function select($qry)
     {
+        /*SÓ FUNCIONA NO PC DO BRUNO GUIMARAES, NAO DESCOMENTE NEM DELETE*/
+        $dsn = "mysql:host=localhost:3308;dbname=reservas";
+        $user = "root";
+        $pass = "";
+
+        /* COMENTE O CÓDIGO ACIMA SE VOCÊ NÃO FOR O BRUNO E USE O ABAIXO
         $dsn = "mysql:host=localhost;dbname=reservas";
         $user = "root";
         $pass = "123123";
+        */
 
         try {
             $pdo = new PDO($dsn, $user, $pass);

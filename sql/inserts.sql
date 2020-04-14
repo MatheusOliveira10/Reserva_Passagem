@@ -8,69 +8,69 @@ INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking)
 
 INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null,'1D', 'N', 'S', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 2A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '2A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 2B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '2B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 2C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '2C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 2D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '2D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 3A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '3A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 3B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '3B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 3C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '3C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 3D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '3D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 4A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '4A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 4B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '4B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 4C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '4C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 4D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '4D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 5A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '5A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 5B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '5B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 5C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '5C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 5D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '5D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 6A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '6A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 6B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '6B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 6C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '6C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 6D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '6D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 7A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '7A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 7B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '7B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 7C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '7C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 7D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '7D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 8A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '8A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 8B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '8B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 8C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '8C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 8D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '8D', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 9A', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '9A', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 9B', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '9B', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 9C', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '9C', 'N', 'N', 'N');
 
-INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, 9D', 'N', 'N', 'N');
+INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null, '9D', 'N', 'N', 'N');
 
 INSERT INTO assentos (id_aviao, id_passagem, posicao, ocupado, PCD, overbooking) VALUES(1, null,'10A', 'N', 'N', 'N');
 

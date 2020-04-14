@@ -24,6 +24,9 @@ switch ($page) {
     $ctrl->login();
     break;
   case "passageiro":
+    $pass->view();
+    break;
+  case "passageiro/cadastrar":
     $pass->cadastro();
     break;
   case "passageiro/save":

@@ -8,6 +8,14 @@ class passageiroController
         include "view/index.php";
     }
 
+    public function view()
+    {
+        $qry = "SELECT * FROM passageiros;";
+        $pdo = new Query();
+        $passageiros = $pdo->select($qry);
+        include "view/passageiros/view.php";
+    }
+
     public function save($request)
     {
         if(isset($request['PCD'])) {
