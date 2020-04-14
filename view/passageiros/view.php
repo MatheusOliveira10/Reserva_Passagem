@@ -33,8 +33,8 @@
             <a href="/cancela" class="item">
                 Cancelar
             </a>
-            <a href="/cancela" class="item">
-                Cliente
+            <a href="/passageiro" class="item">
+                Passageiro
             </a>
             <div class="right menu">
                 <div class="item">
@@ -61,10 +61,10 @@
                         <tr>
                             <td><?php echo $passageiro['id'] ?></td>
                             <td><?php echo $passageiro['nome'] ?></td>
-                            <td>R$ <?php echo $passageiro['cpf'] ?></td>
+                            <td><?php echo $passageiro['cpf'] ?></td>
                             <td><?php echo $passageiro['PCD'] ?></td>
                         </tr>
-                    <?php } ?>
+                    <?php } ?>  
                 </tbody>
             </table>
         </div>

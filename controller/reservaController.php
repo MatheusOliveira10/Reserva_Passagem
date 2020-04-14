@@ -6,7 +6,7 @@ class reservaController
 
     public function cadastro()
     {
-        $qry = "SELECT id_passagem FROM assentos ORDER BY posicao, fileira";
+        $qry = "SELECT * FROM assentos ORDER BY posicao;";
 
         $pdo = new Query();
 
