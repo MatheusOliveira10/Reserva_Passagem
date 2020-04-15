@@ -26,7 +26,7 @@
       <a href="/reserva" class="item">
         Reserva
       </a>
-      <a href="/pagar" class="item">
+      <a href="/pagamento" class="item">
         Pagar
       </a>
       <a href="/cancela" class="item">
@@ -49,7 +49,7 @@
         <h1 class="ui header">
           Sistema de Reserva de Passagens
         </h1>
-        <h2>Seja feliz e reserve passagens nesse tesudo sistema.</h2>
+        <h2>Seja feliz e reserve passagens nesse maravilindo sistema.</h2>
       </div>
     </div>
   </div>

@@ -10,8 +10,8 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/jquery-1.2.6.pack.js"></script>
-    <script type="text/javascript" src="/js/jquery.maskedinput-1.1.4.pack.js">
+    <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
     </script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -30,10 +30,10 @@
             <a href="/pagamento" class="item">
                 Pagar
             </a>
-            <a href="/cancela" class="item">
+            <a href="/cancela" class="active item">
                 Cancelar
             </a>
-            <a href="/cliente" class="active item">
+            <a href="/passageiro" class="item">
                 Passageiro
             </a>
             <div class="right menu">
@@ -46,32 +46,20 @@
             </div>
         </div>
         <div class="ui segment">
-            <form class="ui form" method="post" action="/passageiro/save">
-                <h4 class="ui dividing header">Cadastro de Passageiros <a style="float: right" href="/passageiro"><i class="red eye icon"></i></a></h4>
-
+            <form class="ui form" method="post" action="/cancelamentos/save">
+                <h4 class="ui dividing header">Cancelar Passagem <a style="float: right" href="/cancela"><i class="red eye icon"></i></a></h4>
+   
                 <div class="field">
-                    <label>Nome</label>
-                    <input type="text" name="nome" placeholder="Nome Completo">
-                </div>
-                <div class="inline fields">
-                    <div class="four wide field">
-                        <label for="CPF">CPF</label>
-                        <input id="cpf" type="text" name="CPF" placeholder="CPF">
-                    </div>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="PCD">
-                        <label>É PCD?</label>
-                    </div>
+                    <label>Cancelamento</label>
+                    <select name="passagem">
+                        <?php foreach ($passagens as $passagem) { ?>
+                            <option value="<?php echo $passagem['id'] ?>"><?php echo $passagem['nome'] ?> - Passagem: <?php echo $passagem['id'] ?> - Avião: <?php echo $passagem['id_aviao'] ?> - Assento: <?php echo $passagem['posicao'] ?> - Data: <?php echo $passagem['data'] ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
                 <input type="submit" class="ui blue button" tabindex="0">
+            </form>
         </div>
-    </div>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#cpf").mask("999.999.999-99");
-        });
-    </script>
 </body>
 
 </html>

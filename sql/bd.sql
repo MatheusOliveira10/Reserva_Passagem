@@ -31,9 +31,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `assentos` (
   `id` int(11) NOT NULL,
   `id_aviao` int(11) NOT NULL,
-  `id_passagem` int(11) NOT NULL,
-  `posicao` int(11) NOT NULL,
-  `fileira` int(11) NOT NULL,
+  `id_passagem` int(11),
+  `posicao` varchar(4) NOT NULL,
   `ocupado` char(1) NOT NULL,
   `pcd` char(1) NOT NULL,
   `overbooking` char(1) NOT NULL
@@ -84,7 +83,8 @@ CREATE TABLE `pagamentos` (
 CREATE TABLE `passageiros` (
   `id` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `cpf` varchar(15) NOT NULL
+  `cpf` varchar(15) NOT NULL,
+  `PCD` char(1) NOT NULL  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
