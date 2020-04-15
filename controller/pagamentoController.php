@@ -23,7 +23,6 @@ class pagamentoController
 
     public function cadastro()
     {
-
         $qry = "SELECT passagens.*, passageiros.nome FROM passagens INNER JOIN passageiros on passagens.id_passageiro = passageiros.id";
         //$qry .= " WHERE passagens.pago <> 'S'";
 

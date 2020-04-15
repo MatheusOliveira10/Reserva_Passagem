@@ -10,8 +10,8 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js">
+    <script type="text/javascript" src="/js/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="/js/jquery.maskedinput-1.1.4.pack.js">
     </script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -47,7 +47,7 @@
         </div>
         <div class="ui segment">
             <form class="ui form" method="post" action="/passageiro/save">
-                <h4 class="ui dividing header">Cadastro de Passageiros <a href="/cliente"><i class="plus icon"></i></a></h4>
+                <h4 class="ui dividing header">Cadastro de Passageiros</h4>
 
                 <div class="field">
                     <label>Nome</label>

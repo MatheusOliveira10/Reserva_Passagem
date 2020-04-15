@@ -6,11 +6,15 @@ class reservaController
 
     public function cadastro()
     {
-        $qry = "SELECT * FROM assentos ORDER BY posicao;";
+        $qry = "SELECT id_passagem FROM assentos ORDER BY id";
 
         $pdo = new Query();
 
         $assentos = $pdo->select($qry);
+
+        $qry = "SELECT * FROM passageiros";
+
+        $passageiros = $pdo->select($qry);
 
         include "view/reservas/cadastro.php";
     }
@@ -22,9 +26,9 @@ class reservaController
                 $cadeira = $i . $j;
                 if (isset($request[$cadeira])) {
                     $qry = "INSERT INTO passagens(id_passageiro, preco, pago, data) VALUES (";
-                    $qry .= "'" . $request['passageiro'] . "'";
+                    $qry .= "'" . $request["passageiro"] . "'";
                     $qry .= ",";
-                    $qry .= "'" . $request['preco'] . "'";
+                    $qry .= "'" . $request["preco"]  . "'";
                     $qry .= ",";
                     $qry .= "'N'";
                     $qry .= ",";
@@ -37,16 +41,14 @@ class reservaController
                     $qry = "SELECT MAX(id) from passagens";
                     $id = $pdo->select($qry);    
 
-                    $qry = "UPDATE assentos SET id_passagem = " . $id;
-                    $qry .= "WHERE posicao =" . $request[$cadeira] . "'";
+                    $qry = "UPDATE assentos SET id_passagem = " . $id[0][0];
+                    $qry .= " WHERE posicao = '" . $cadeira . "'";
 
                     $pdo = new Query();
                     $pdo->insert($qry);
                 }
             }
         }
-
-
 
         header("Location: /reserva");
     }

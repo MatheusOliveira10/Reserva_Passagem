@@ -21,7 +21,7 @@
 <body>
 <div class="ui container">
         <div class="ui pointing menu">
-            <a href="/" class="active item">
+            <a href="/" class="item">
                 Home
             </a>
             <a href="/reserva" class="item">
@@ -33,7 +33,7 @@
             <a href="/cancela" class="item">
                 Cancelar
             </a>
-            <a href="/passageiro" class="item">
+            <a href="/passageiro" class="active item">
                 Passageiro
             </a>
             <div class="right menu">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2>Passageiros</h2>
+            <h2>Passageiros <a href="/passageiro/cadastrar"><i class="plus red icon" style="float: right"></i></a></h2>
             <table class="ui red table">
                 <thead>
                     <tr>
