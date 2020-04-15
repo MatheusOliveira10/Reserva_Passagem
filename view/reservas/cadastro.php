@@ -64,7 +64,7 @@
         </div>
         <div class="field">
             <label for="preco">Preço</label>
-            <input type="number" placeholder="Digite o Preço" id="preco" name="preco">
+            <input type="number" step="0.01" placeholder="Digite o Preço" id="preco" name="preco">
         </div>
         
         <h4 class="ui dividing header">Escolha o Assento: </h4>

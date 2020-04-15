@@ -27,10 +27,10 @@
             <a href="/reserva" class="item">
                 Reserva
             </a>
-            <a href="/pagamento" class="active item">
+            <a href="/pagamento" class="item">
                 Pagar
             </a>
-            <a href="/cancela" class="item">
+            <a href="/cancela" class="active item">
                 Cancelar
             </a>
             <a href="/passageiro" class="item">
@@ -47,11 +47,13 @@
         </div>
         <div class="ui segment">
             <form class="ui form" method="post" action="/cancelamentos/save">
+                <h4 class="ui dividing header">Cancelar Passagem <a style="float: right" href="/cancela"><i class="red eye icon"></i></a></h4>
+   
                 <div class="field">
                     <label>Cancelamento</label>
                     <select name="passagem">
                         <?php foreach ($passagens as $passagem) { ?>
-                            <option value="<?php echo $passagem['id'] ?>">Id da passagem: <?php echo $passagem['id'] ?> - Id Avião: <?php echo $passagem['id_aviao'] ?> - Posicao do Assento: <?php echo $passagem['posicao'] ?> - <?php echo $passagem['data'] ?></option>
+                            <option value="<?php echo $passagem['id'] ?>"><?php echo $passagem['nome'] ?> - Passagem: <?php echo $passagem['id'] ?> - Avião: <?php echo $passagem['id_aviao'] ?> - Assento: <?php echo $passagem['posicao'] ?> - Data: <?php echo $passagem['data'] ?></option>
                         <?php } ?>
                     </select>
                 </div>

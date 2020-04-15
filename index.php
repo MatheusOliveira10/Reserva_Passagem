@@ -35,13 +35,13 @@ switch ($page) {
     $pass->save($_POST);
     break;
   case "pagamento":
-    $pagar->cadastro();
+    $pagar->view();
     break;
   case "pagamento/save":
     $pagar->pagar($_POST);
     break;
-  case "pagamento/view":
-    $pagar->view();
+  case "pagamento/cadastrar":
+    $pagar->cadastro();
     break;
   case "reserva":
     $reserva->cadastro();
@@ -55,11 +55,12 @@ switch ($page) {
   case "cancelamentos/save":
     $cancelamento->save($_POST);
     break;
-  case "cancelamentos/cadastro":
+  case "cancelamentos/cadastrar":
     $cancelamento->cadastro();
     break;
-  case "cancelamentos/":
+  case "cancela":
     $cancelamento->view();
+    break;
   default:
     $ctrl->index();
     break;

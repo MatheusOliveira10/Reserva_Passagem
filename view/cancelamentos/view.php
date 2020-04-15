@@ -21,7 +21,7 @@
 <body>
 <div class="ui container">
         <div class="ui pointing menu">
-            <a href="/" class="active item">
+            <a href="/" class="item">
                 Home
             </a>
             <a href="/reserva" class="item">
@@ -30,11 +30,11 @@
             <a href="/pagamento" class="item">
                 Pagar
             </a>
-            <a href="/cancelamentos" class="item">
+            <a href="/cancelamentos" class="active item">
                 Cancelar
             </a>
-            <a href="/passageiros" class="item">
-                Cliente
+            <a href="/passageiro" class="item">
+                Passageiro
             </a>
             <div class="right menu">
                 <div class="item">
@@ -46,28 +46,27 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2>Passageiros</h2>
+            <h2>Cancelamentos <a style="float: right" href="/cancelamentos/cadastrar"><i class="red plus icon"></i></a></h2>
             <a href="/cancelamentos/cadastro">
-            <button class="ui secondary button">
-                Cadastrar novo cancelamento
-            </button>
             </a>
             <table class="ui red table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>ID Passagem</th>
-                        <th>Data</th>
+                        <th>Passagem</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
                         <th>Parcial</th>
+                        <th>Data</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($cancelamentos as $cancelamento) { ?>
                         <tr>
                             <td><?php echo $cancelamento['id'] ?></td>
-                            <td><?php echo $cancelamento['id_passageiro'] ?></td>
-                            <td><?php echo $cancelamento['data'] ?></td>
+                            <td><?php echo $cancelamento['nome'] ?></td>
+                            <td>R$ <?php echo $cancelamento['preco'] ?></td>
                             <td><?php echo $cancelamento['parcial'] ?></td>
+                            <td><?php echo $cancelamento['data'] ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>

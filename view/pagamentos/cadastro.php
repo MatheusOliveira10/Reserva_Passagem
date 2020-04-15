@@ -47,7 +47,7 @@
         </div>
         <div class="ui segment">
             <form class="ui form" method="post" action="/pagamento/save">
-                <h4 class="ui dividing header">Realizar Pagamento <a style="float: right" href="/pagamento/view"><i class="red eye icon"></i></a>
+                <h4 class="ui dividing header">Realizar Pagamento <a style="float: right" href="/pagamento"><i class="red eye icon"></i></a>
                 </h4>
                 <div class="field">
                     <label>Passagem</label>

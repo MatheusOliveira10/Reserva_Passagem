@@ -24,7 +24,7 @@
             <a href="/" class="item">
                 Home
             </a>
-            <a href="/reserva" class="item">
+            <a href="/reserva" class="active item">
                 Reserva
             </a>
             <a href="/pagamento" class="item">
@@ -33,7 +33,7 @@
             <a href="/cancela" class="item">
                 Cancelar
             </a>
-            <a href="/passageiro" class="active item">
+            <a href="/passageiro" class="item">
                 Passageiro
             </a>
             <div class="right menu">
