@@ -3,6 +3,19 @@
 
 class reservaController
 {
+    public function view() 
+    {
+        $qry = "SELECT assentos.id, passageiros.nome, assentos.posicao, passagens.preco, assentos.PCD, assentos.overbooking FROM assentos INNER JOIN passagens on assentos.id_passagem = passagens.id ";
+        $qry .= "INNER JOIN passageiros on passagens.id_passageiro = passageiros.id ";
+        $qry .= " WHERE assentos.id_passagem IS NOT NULL";
+        $qry .= " ORDER BY assentos.id";
+
+        $pdo = new Query();
+
+        $reservas = $pdo->select($qry);
+
+        include "view/reservas/view.php";
+    }
 
     public function cadastro()
     {

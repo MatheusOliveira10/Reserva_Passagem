@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="ui segment">
-            <h2 class="ui red dividing header">Faça a sua Reserva! <a style="float: right" href="/reservas/view"><i class="red eye icon"></i></a></h2>
+            <h2 class="ui red dividing header">Faça a sua Reserva! <a style="float: right" href="/reserva/view"><i class="red eye icon"></i></a></h2>
         <form class="ui form" action="/reserva/save" method="post">
         <h4 class="ui dividing header">Definições: </h4>
 

@@ -49,7 +49,7 @@
         <h1 class="ui header">
           Sistema de Reserva de Passagens
         </h1>
-        <h2>Seja feliz e reserve passagens nesse tesudo sistema.</h2>
+        <h2>Seja feliz e reserve passagens nesse maravilindo sistema.</h2>
       </div>
     </div>
   </div>

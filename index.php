@@ -47,6 +47,9 @@ switch ($page) {
   case "reserva/save":
     $reserva->save($_POST);
     break;
+  case "reserva/view":
+    $reserva->view();
+    break;
   default:
     $ctrl->index();
     break;
